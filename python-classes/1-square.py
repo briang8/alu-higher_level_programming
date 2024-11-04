@@ -1,19 +1,10 @@
 #!/usr/bin/python3
 # 1-square.py
-"""
-This is a class module
-that creates a class called
-Square.
-"""
+
 
 
 class Square:
-    """This is the class Square
-    that has a private instance method
-    private instance method are created
-    with __attribute(variable)name
 
-    """
     def __init__(self, size):
         """
         this is a built-in special python
