@@ -38,3 +38,4 @@ class Square():
             raise
         except ValueError:
             raise
+
