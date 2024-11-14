@@ -1,20 +1,17 @@
 #!/usr/bin/python3
+# 0-read_file.py
+"""This is a python file that
+opens a file for reading and
+prints to the standard output
 """
-This module contains a function to read a text file
-and print its contents to standard output.
-"""
+
 
 def read_file(filename=""):
-    """Reads a text file and prints its contents to stdout.
-
-    Args:
-        filename (str): The name of the file to read. Defaults to an empty string.
-
+    """This function reads a filename
+    using the key word arguement filename
+    and encodes in utf-8 opens in textmode
+    and prints data to standard output
     """
-    # Open the specified file in read mode with UTF-8 encoding
-    with open(filename, 'r', encoding='utf-8') as file:
-        # Read the entire content of the file into a string
-        content = file.read()
-        
-        # Print the content to standard output
-        print(content)
+    with open(filename, mode="r", encoding="utf-8") as f:
+        read_data = f.read()
+        print(read_data, end="")
